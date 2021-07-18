@@ -1,3 +1,56 @@
+# Curso Introducción ARC Identity
+
+_Conociendo el uso y aplicación de APIS de ARC Identity con SDK_
+
+![Alt text](https://xn--jorgedueas-09a.com/img/Imagen_APP.png "Title")
+
+## Comenzando 🚀
+
+_Estas instrucciones te permitirán obtener una copia de la demo en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+
+
+### Pre-requisitos 📋
+
+_Lo de toda la vida_
+
+```
+nodejs
+```
+
+### Instalación 🔧
+
+_Comandos justos y necesarios_
+
+```
+npm install
+```
+
+_Generando Start_
+
+```
+npm run start
+```
+
+_Generando Build_
+
+```
+npm run build
+```
+
+### Utilitarios 🧰
+
+Script formato POSTMAN [Link AQUÍ](https://xn--jorgedueas-09a.com/img/Authentication_Users_ARC.postman_collection.json)
+
+Deseas Probar los correos de Registro, verificación y olvide contraseña: [https://mailinator.com](https://mailinator.com)
+
+Deseas ver o probar la funcionalidad completa de Identity: [Link AQUÍ](https://elcomercio-elcomercio-sandbox.cdn.arcpublishing.com/signwall/?outputType=subscriptions)
+
+
+
+_Saludos_
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
