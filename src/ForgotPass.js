@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
+import Identity from '@arc-publishing/sdk-identity';
 
 function ForgotPass() {
   const [sendEmail, sendSendEmail] = useState();
@@ -18,7 +19,7 @@ function ForgotPass() {
 
   const handleSubmit = () => {
     const { emailForgot } = dataForgot;
-    window.Identity.requestResetPassword(emailForgot)
+    Identity.requestResetPassword(emailForgot)
       .then((res) => {
         sendSendEmail(true);
       })

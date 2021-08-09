@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Identity from '@arc-publishing/sdk-identity';
 
 function Register({ handleLogged }) {
   const [dataRegister, setDataRegister] = useState({
@@ -33,7 +34,7 @@ function Register({ handleLogged }) {
       NumDocReg,
     } = dataRegister;
 
-    window.Identity.signUp(
+    Identity.signUp(
       {
         userName: emailReg,
         credentials: passReg,

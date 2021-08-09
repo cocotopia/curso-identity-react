@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
+import Identity from '@arc-publishing/sdk-identity';
 
 function Profile({ handleLogout }) {
   const [fullName, setFullName] = useState();
 
   useEffect(() => {
-    window.Identity.getUserProfile()
+    Identity.getUserProfile()
       .then((res) => {
         const { firstName, lastName, secondLastName } = res;
         setFullName(firstName + " " + lastName + " " + secondLastName);

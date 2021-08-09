@@ -6,6 +6,7 @@ import Profile from "./Profile";
 import ForgotPass from "./ForgotPass";
 
 import React, { useState, useEffect } from "react";
+import Identity from '@arc-publishing/sdk-identity';
 
 function App() {
   const UrlBase = "https://api-sandbox.elcomercio.pe";
@@ -19,8 +20,8 @@ function App() {
     const sdkIdentity = document.createElement("script");
     sdkIdentity.src = urlSDK;
     sdkIdentity.onload = function () {
-      window.Identity.apiOrigin = UrlBase;
-      window.Identity.isLoggedIn()
+      Identity.apiOrigin = UrlBase;
+      Identity.isLoggedIn()
         .then((res) => {
           if (res === true) {
             setIsLogged(true);
@@ -34,13 +35,13 @@ function App() {
   }, []);
 
   const handleLogout = () => {
-    window.Identity.logout().then((res) => {
+    Identity.logout().then((res) => {
       setIsLogged(false);
     });
   };
 
   const handleLogged = () => {
-    window.Identity.isLoggedIn()
+    Identity.isLoggedIn()
       .then((res) => {
         if (res === true) {
           setIsLogged(true);
